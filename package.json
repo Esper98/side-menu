@@ -1,0 +1,17 @@
+{
+  "name": "side-menu",
+  "version": "1.0.0",
+  "description": "side menu practise",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esper98/side-menu.git"
+  },
+  "author": "Esper van den Heuvel",
+  "license": "ISC"
+}
