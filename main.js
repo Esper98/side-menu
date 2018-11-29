@@ -1,20 +1,17 @@
 let menuIcon = document.querySelector("#menu-icon");
-let menu = document.querySelector("#menu");
+let menu = document.querySelector("#menu-list");
 
 menuIcon.addEventListener("click", fadeMenu);
+menu.style.transform = "translateX(300px)";
 
 function fadeMenu(){
-    if (menu.style.visibility === "visible"){
-        menu.style.visibility = "hidden";
+
+    console.log("test");
+    if (menu.style.transform === "translateX(300px)")
+    {
+        menu.style.transform = "translateX(0px)";
+
     } else{
-        menu.style.visibility = "visible" ;
-        menu.style.marginRight = "-200px";
-    }
-    var margin = menu.style.marginRight.slice(0,-2)
-    console.log(margin);
-    while (margin < 0){
-        console.log(menu.style.marginRight);
-        margin++;
-        menu.style.marginRight = margin + "px";
+        menu.style.transform = "translateX(300px)";
     }
 }
