@@ -17,3 +17,14 @@ function fadeMenu(){
         menu.style.transform = "translateX(500px)";
     }
 }
+
+document.onclick = function(e){
+    if(e.target.id === ''){
+        console.log(e.target.id);
+        if (menu.style.transform !== "translateX(500px)") {
+            console.log("2");
+            menu.style.transform = "translateX(500px)";
+            menuIcon.classList.toggle("change");
+        }
+    }    
+ };
