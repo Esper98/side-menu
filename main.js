@@ -6,9 +6,7 @@ menu.style.transform = "translateX(500px)";
 
 function fadeMenu(){
     menuIcon.classList.toggle("change");
-    console.log("test");
     var width = menu.width;
-    console.log(menu.style);
     if (menu.style.transform === "translateX(500px)")
     {
         menu.style.transform = "translateX(0px)";
@@ -19,10 +17,9 @@ function fadeMenu(){
 }
 
 document.onclick = function(e){
-    if(e.target.id === ''){
-        console.log(e.target.id);
+    console.log(e.target.id);
+    if(!e.target.id.includes('menu')){
         if (menu.style.transform !== "translateX(500px)") {
-            console.log("2");
             menu.style.transform = "translateX(500px)";
             menuIcon.classList.toggle("change");
         }
