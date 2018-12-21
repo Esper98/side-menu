@@ -52,7 +52,7 @@ body{
     right: 0px;
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 100%;
 }
 
 #menu-list{
@@ -63,6 +63,7 @@ body{
     background-color: aqua;
     z-index: -1;
     transition: 0.8s;
+    height: 100%; 
 }
 
 li {
@@ -72,6 +73,7 @@ li {
     width: 100%;
     font-size: 30px;
     padding: 15px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.7);
 }
 
 li:hover {
