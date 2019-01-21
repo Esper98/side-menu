@@ -1,13 +1,89 @@
 body{
-    background-color: rgb(236, 254, 255);
+    background-color: rgb(255, 255, 255);
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Sarabun', sans-serif;
     margin: 0px;
 }
 
+section{
+    padding: 120px 100px;
+}
+
+#logo {
+    margin: 0px;
+    padding: 10px 50px;
+    color: white;
+}
+
 #header{
+    background: rgb(73,42,187);
+    background: linear-gradient(15deg, rgba(73,42,187,1) 0%, rgba(0,212,255,1) 100%);
     width: 100%;
-    height: 500px;
+    height: 550px;
+    box-shadow: inset 0px -15px 20px -10px #00000050;
+}
+
+#header-content{
+    float: left;
+    color: white;
+    padding: 120px 0px 0px 100px;
+    text-shadow: 2px 1px 15px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.images{
+    position: relative;
+    padding: 50px 100px 0px 0px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.header-image {
+    -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.7);
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.7);
+}
+
+.image-top {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+h1{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px 0px 20px 0px; 
+    width: fit-content;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px; 
+    font-size: 25px;
+    color: rgba(214, 214, 214, 0.8);
+}
+
+button{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    background-color: rgb(255, 255, 255);
+    color: rgb(83, 45, 221);
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 10px 40px;
+    border: 0px;
+    transition: 300ms;
+}
+
+button:hover{
+    background-color: rgb(83, 45, 221);
+    color: rgb(255, 255, 255);
+}
+
+button:focus {
+    outline:0;
 }
 
 /* menu animation */
@@ -17,14 +93,16 @@ body{
     top: 0px;
     width: 35px;
     margin: 10px 15px;
+    z-index: 10;
 }
 
 #menu-bar1, #menu-bar2, #menu-bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: rgb(241, 241, 241);
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 5px;
 }
 
 /* Rotate first bar */
@@ -47,7 +125,7 @@ body{
 
 #menu{
     top: 0px;
-    z-index: -10;
+    z-index: 2;
     overflow: hidden;
     position: absolute;
     right: 0px;
@@ -61,10 +139,10 @@ body{
     padding: 60px 0px;
     right: 0px;
     width: 100%;
-    background-color: aqua;
-    z-index: -1;
+    background-color: rgb(34, 34, 34);
     transition: 0.8s;
     height: 100%; 
+    color: white;
 }
 
 li {
@@ -74,7 +152,7 @@ li {
     width: 100%;
     font-size: 30px;
     padding: 15px;
-    border-top: 1px solid rgba(51, 51, 51, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 li:first-child {
@@ -83,6 +161,6 @@ li:first-child {
 
 li:hover {
     background-color: white;
-    color: rgb(46, 255, 185);
+    color: rgb(83, 45, 221);
     transition: 500ms;
 }
