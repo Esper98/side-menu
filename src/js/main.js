@@ -4,7 +4,6 @@ let menuIcon = document.querySelector("#menu-icon");
 let menu = document.querySelector("#menu-list");
 
 menuIcon.addEventListener("click", fadeMenu);
-menu.style.transform = "translateX(500px)";
 
 function fadeMenu(){
     menuIcon.classList.toggle("change");
