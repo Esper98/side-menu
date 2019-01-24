@@ -134,6 +134,7 @@ button:focus {
     height: 100%;
 
     #menu-list{
+        transform: translateX(0px);
         text-align:center;
         margin: 0px;
         padding: 0px 0px;
@@ -145,7 +146,6 @@ button:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        transform: translateX(0px);
     }
     
     li {
@@ -167,19 +167,28 @@ button:focus {
     }
 }
 
+.open-menu{
+    transform: translateX(500px);
+}
+
+
 @media screen and (max-width: 800px) {
+    .open-menu{
+        transform: translateX(0px) !important;
+    }
+
     #menu-icon {
         display: block;
     }
 
     #menu #menu-list {
+        transform: translateX(500px);
         height: 100%; 
         padding: 60px 0px;
         background-color: rgb(34, 34, 34);
         flex-direction: column;
         justify-content: start;
-        transform: translateX(500px);
-        transition: 0.8s;
+        transition: 0.0s;
     }
 
     li:hover {

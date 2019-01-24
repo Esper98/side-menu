@@ -7,13 +7,11 @@ menuIcon.addEventListener("click", fadeMenu);
 
 function fadeMenu(){
     menuIcon.classList.toggle("change");
-    var width = menu.width;
-    if (menu.style.transform === "translateX(500px)")
+    if (menu.classList.contains("open-menu"))
     {
-        menu.style.transform = "translateX(0px)";
-
+        menu.classList.remove("open-menu");
     } else{
-        menu.style.transform = "translateX(500px)";
+        menu.classList.add("open-menu");
     }
 }
 
@@ -26,3 +24,19 @@ document.onclick = function(e){
         }
     }    
  };
+
+// window.onload = function () {
+//     if (window.innerWidth < 801){
+//         menu.classList.add("closed-menu");
+//     }
+// }
+
+// window.onresize = function(event) {
+//     console.log(window.innerWidth);
+//     if (window.innerWidth > 800){
+//         menu.classList.remove("open-menu");
+//         menu.classList.remove("closed-menu");
+//     } else {
+//         menu.classList.add("closed-menu");
+//     }
+// };
