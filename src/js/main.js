@@ -16,13 +16,16 @@ function fadeMenu(){
 }
 
 document.onclick = function(e){
-    console.log(e.target.id);
-    if(!e.target.id.includes('menu')){
-        if (menu.style.transform !== "translateX(500px)") {
-            menu.style.transform = "translateX(500px)";
-            menuIcon.classList.toggle("change");
-        }
-    }    
+    if (window.innerWidth <= 800){
+        console.log(e.target.id);
+        if(!e.target.id.includes('menu')){
+            if (menu.classList.contains("open-menu"))
+            {
+                menu.classList.remove("open-menu");
+                menuIcon.classList.toggle("change");
+            }
+        }  
+    }  
  };
 
 // window.onload = function () {
