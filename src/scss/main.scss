@@ -15,6 +15,7 @@ section{
     width: 100%;
     height: 550px;
     box-shadow: inset 0px -15px 20px -10px #00000050;
+    padding-top: 10px;
 
     #header-content{
         float: left;
@@ -33,7 +34,7 @@ section{
 
     .images{
         position: relative;
-        padding: 50px 100px 0px 0px;
+        padding: 50px 0px 0px 0px;
         float: left;
         width: 50%;
         box-sizing: border-box;
@@ -49,7 +50,7 @@ section{
             animation: hover2 4s ease-in-out infinite alternate;
             position: absolute;
             top: 200px;
-            left: 100px;
+            left: 30%;
         }
     }
     h1{
@@ -128,7 +129,7 @@ button:focus {
 
 #menu{
     top: 0px;
-    z-index: 2;
+    z-index: -1;
     overflow: hidden;
     position: absolute;
     right: 0px;
@@ -140,7 +141,7 @@ button:focus {
         transform: translateX(0px);
         text-align:center;
         margin: 0px;
-        padding: 0px 0px;
+        padding: 10px 0px 0px 0px;
         right: 0px;
         width: 100%;
         transition: 0s;
@@ -149,6 +150,7 @@ button:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        z-index: 0;
     }
     
     li {
@@ -167,12 +169,14 @@ button:focus {
     }
     
     li:hover {
+        cursor: pointer;
         color: rgb(52, 50, 59);
         transition: 500ms;
     }
 }
 
 .open-menu{
+    z-index: 10 !important;
     transform: translateX(500px);
 }
 
@@ -207,6 +211,23 @@ button:focus {
     li {
         border-top: 1px solid rgba(255, 255, 255, 0.7);
     }
+
+    #header {
+        height: 900px;
+
+        #header-content{
+            padding: 60px 0px 0px 100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .images{
+            float: none;
+            margin: 350px auto;
+        }
+    }
+    
+
 }
 
 //Animations 
