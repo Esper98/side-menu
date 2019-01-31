@@ -1,7 +1,7 @@
 import '../scss/main.scss'
 
 let menuIcon = document.querySelector("#menu-icon");
-let menu = document.querySelector("#menu-list");
+let menu = document.querySelector("#menu");
 
 menuIcon.addEventListener("click", fadeMenu);
 
