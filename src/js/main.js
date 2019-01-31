@@ -1,7 +1,8 @@
 import '../scss/main.scss'
 
 let menuIcon = document.querySelector("#menu-icon");
-let menu = document.querySelector("#menu");
+let menu = document.querySelector("#menu-list");
+let body = document.querySelector("body")
 
 menuIcon.addEventListener("click", fadeMenu);
 
@@ -10,8 +11,10 @@ function fadeMenu(){
     if (menu.classList.contains("open-menu"))
     {
         menu.classList.remove("open-menu");
+        body.classList.remove("hide-scrollbar");
     } else{
         menu.classList.add("open-menu");
+        body.classList.add("hide-scrollbar");
     }
 }
 
@@ -22,6 +25,7 @@ document.onclick = function(e){
             if (menu.classList.contains("open-menu"))
             {
                 menu.classList.remove("open-menu");
+                body.classList.remove("hide-scrollbar");
                 menuIcon.classList.toggle("change");
             }
         }  

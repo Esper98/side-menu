@@ -3,6 +3,11 @@ body{
     color: black;
     font-family: 'Sarabun', sans-serif;
     margin: 0px;
+    height: 100%;
+}
+
+.hide-scrollbar {
+    overflow: auto;
 }
 
 section{
@@ -34,7 +39,7 @@ section{
 
     .images{
         position: relative;
-        padding: 50px 0px 0px 0px;
+        padding: 50px 0px 0px 20px;
         float: left;
         width: 50%;
         box-sizing: border-box;
@@ -44,13 +49,17 @@ section{
             -moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.7);
             box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.7);
             animation: hover 4s ease-in-out infinite alternate;
+            max-height: 80%;
+            max-width: 80%;
         }
 
         .image-top {
             animation: hover2 4s ease-in-out infinite alternate;
             position: absolute;
             top: 200px;
-            left: 30%;
+            right: 20%;
+            max-height: 60%;
+            max-width: 60%;
         }
     }
     h1{
@@ -178,20 +187,26 @@ button:focus {
 .open-menu{
     z-index: 10 !important;
     transform: translateX(0px);
-    display: block !important;
+    transition: 0.8s;
+
+//    display: block !important;
 }
 
 
 @media screen and (max-width: 800px) {
+    .hide-scrollbar {
+        overflow: hidden;
+    }
+
     #menu{
         max-width: 500px;
         height: 100%;
-        transform: translateX(500px);
         transition: 0.8s;
-        display: none;
+        overflow: hidden;
     }
 
     .open-menu{
+        transition: 2s;
         transform: translateX(0px) !important;
     }
 
@@ -200,6 +215,8 @@ button:focus {
     }
 
     #menu #menu-list {
+        transition: 0.8s;
+        transform: translateX(500px);
         height: 100%; 
         padding: 60px 0px;
         background-color: rgb(34, 34, 34);
@@ -219,14 +236,25 @@ button:focus {
         height: 850px;
 
         #header-content{
-            padding: 60px 0px 0px 100px;
+            padding: 40px 0px 0px 0px;
             width: 100%;
             text-align: center;
         }
 
         .images{
+            width: 80%;
             float: none;
             margin: 300px auto;
+
+            .header-image {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .image-top {
+                display: none;
+            }
         }
     }
     
