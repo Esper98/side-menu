@@ -137,6 +137,7 @@ button:focus {
 
 
 #menu{
+    pointer-events: none;
     top: 0px;
     z-index: 0;
     overflow: hidden;
@@ -147,6 +148,7 @@ button:focus {
     height: 60px;
 
     #menu-list{
+        pointer-events: all;
         transform: translateX(0px);
         text-align:center;
         margin: 0px;
@@ -206,15 +208,18 @@ button:focus {
     }
 
     .open-menu{
+        z-index: 10 !important;
         transition: 2s;
         transform: translateX(0px) !important;
     }
 
     #menu-icon {
+        cursor: pointer;
         display: block;
     }
 
     #menu #menu-list {
+        z-index: -10;
         transition: 0.8s;
         transform: translateX(500px);
         height: 100%; 
@@ -236,7 +241,7 @@ button:focus {
         height: 850px;
 
         #header-content{
-            padding: 40px 0px 0px 0px;
+            padding: 40px 20px 0px 20px;
             width: 100%;
             text-align: center;
         }
@@ -245,6 +250,7 @@ button:focus {
             width: 80%;
             float: none;
             margin: 300px auto;
+            padding: 80px 0px 0px 0px;
 
             .header-image {
                 max-width: 100%;
