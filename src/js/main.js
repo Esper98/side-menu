@@ -1,4 +1,5 @@
 import '../scss/main.scss'
+import '../scss/header.scss'
 
 let menuIcon = document.querySelector("#menu-icon");
 let menu = document.querySelector("#menu-list");
