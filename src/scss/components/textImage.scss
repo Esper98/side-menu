@@ -7,10 +7,12 @@
     }
 
     .image-container{
-        width: 50%;
-        height: auto;
+        width: 40%;
+        padding-left: 10%;
+        height: 100%;
+        display: inline-block;
 
-        image{
+        .image{
             width: 100%;
             height: auto;
         }
