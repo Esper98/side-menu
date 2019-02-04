@@ -8,20 +8,36 @@ body{
     height: 100%;
 }
 
+h1{
+    @include responsive-font-size(3rem);
+}
+
+h1{
+    @include responsive-font-size(2.5rem);
+}
+
+h1{
+    @include responsive-font-size(2.2rem);
+}
+
+p{
+    @include responsive-font-size(1.1rem);
+}
+
 .hide-scrollbar {
     overflow: auto;
 }
 
 section{
-    padding: 120px 100px;
+    padding: 120px 10%;
 }
 
 button{
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     background-color: rgb(255, 255, 255);
-    color: rgb(83, 45, 221);
+    color: rgb(23, 123, 180);
     border-radius: 30px;
-    @include responsive-font-size(4rem);
+    @include responsive-font-size(1.8rem);
     padding: 10px 40px;
     border: 0px;
     transition: 300ms;
