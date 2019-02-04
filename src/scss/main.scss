@@ -1,4 +1,5 @@
 @import "../../node_modules/rfs/scss/_rfs.scss";
+@import './components/textImage.scss';
 
 body{
     background-color: rgb(255, 255, 255);
@@ -30,6 +31,14 @@ p{
 
 section{
     padding: 120px 10%;
+}
+
+section:nth-child(even){
+    padding: 120px 10%;
+}
+
+section:nth-child(odd){
+    background-color: rgb(187, 187, 187);
 }
 
 button{
