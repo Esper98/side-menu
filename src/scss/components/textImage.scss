@@ -3,11 +3,11 @@
     justify-content: center;
 
     .text{
-        width: 50%;
+        width: 30%;
     }
 
     .image-container{
-        width: 40%;
+        width: 60%;
         padding-left: 10%;
         height: 100%;
         display: inline-block;
@@ -17,5 +17,20 @@
             height: auto;
         }
     }
-
 }
+
+@media screen and (max-width: 800px) {
+    .text-image{
+        flex-direction: column;
+    
+        .text{
+            width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            padding-left: 0%;
+        }
+    }
+}
+
+
