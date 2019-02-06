@@ -11,15 +11,31 @@ body{
 }
 
 h1{
-    @include responsive-font-size(3rem);
+    @include responsive-font-size(2.8rem);
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-h1{
+h2{
     @include responsive-font-size(2.5rem);
 }
 
-h1{
+h3{
     @include responsive-font-size(2.2rem);
+}
+
+h4{
+    @include responsive-font-size(2rem);
+    margin-top: 0px;
+    color: rgb(71, 114, 255);
+    margin-bottom: 10px;
+}
+
+h5{
+    @include responsive-font-size(1.6rem);
+    margin-top: 0px;
+    color: rgb(71, 114, 255);
+    margin-bottom: 10px;
 }
 
 p{
@@ -47,7 +63,7 @@ button{
     background-color: rgb(255, 255, 255);
     color: rgb(23, 123, 180);
     border-radius: 30px;
-    @include responsive-font-size(1.8rem);
+    @include responsive-font-size(1.6rem);
     padding: 10px 40px;
     border: 0px;
     transition: 300ms;

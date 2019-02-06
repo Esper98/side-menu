@@ -3,11 +3,21 @@
     justify-content: center;
 
     .text{
-        width: 30%;
+        width: 40%;
+    }
+
+    button{
+        background-color: rgb(71, 114, 255);
+        color: white;
+    }
+
+    button:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(71, 114, 255);
     }
 
     .image-container{
-        width: 60%;
+        width: 50%;
         padding-left: 10%;
         height: 100%;
         display: inline-block;
@@ -15,6 +25,7 @@
         .image{
             width: 100%;
             height: auto;
+            box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.75);
         }
     }
 }
