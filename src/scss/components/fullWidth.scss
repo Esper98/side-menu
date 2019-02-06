@@ -1,0 +1,19 @@
+.fullWidth {
+    text-align: center;
+    padding: 120px;
+    background: #2c81f7;
+    background: -moz-linear-gradient(45deg, #2c81f7 0%, #2b88d9 50%, #207cca 51%, #7f44ff 100%);
+    background: -webkit-linear-gradient(45deg, #2c81f7 0%,#2b88d9 50%,#207cca 51%,#7f44ff 100%);
+    background: linear-gradient(45deg, #2c81f7 0%,#2b88d9 50%,#207cca 51%,#7f44ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c81f7', endColorstr='#7f44ff',GradientType=1 );
+
+    h1 {
+        color: white;
+    }
+    
+    p {
+        color: white;
+    }
+}
+
+
